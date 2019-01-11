@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saitama.Specs", "src\Saitama.Specs\Saitama.Specs.csproj", "{83DB254F-4D83-4C81-AA59-C89C89F2B47D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Saitama", "src\Saitama\Saitama.csproj", "{1C2733BD-F5E9-4426-B71F-E3B57302F669}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saitama.Tests", "src\Saitama.Tests\Saitama.Tests.csproj", "{03B8D43A-1037-4D7C-8509-917D8E0B2ECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saitama.Playground", "src\Saitama.Playground\Saitama.Playground.csproj", "{46CD50BE-1138-403F-8296-F1AB479598F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saitama.Dummy", "src\Saitama.Dummy\Saitama.Dummy.csproj", "{1CC5CC7D-F120-4424-9081-D89AEA4EC2F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A1097BF2-648F-4458-B673-72DB37B3C452}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83DB254F-4D83-4C81-AA59-C89C89F2B47D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DB254F-4D83-4C81-AA59-C89C89F2B47D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DB254F-4D83-4C81-AA59-C89C89F2B47D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DB254F-4D83-4C81-AA59-C89C89F2B47D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C2733BD-F5E9-4426-B71F-E3B57302F669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2733BD-F5E9-4426-B71F-E3B57302F669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2733BD-F5E9-4426-B71F-E3B57302F669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2733BD-F5E9-4426-B71F-E3B57302F669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B8D43A-1037-4D7C-8509-917D8E0B2ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B8D43A-1037-4D7C-8509-917D8E0B2ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B8D43A-1037-4D7C-8509-917D8E0B2ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B8D43A-1037-4D7C-8509-917D8E0B2ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46CD50BE-1138-403F-8296-F1AB479598F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46CD50BE-1138-403F-8296-F1AB479598F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46CD50BE-1138-403F-8296-F1AB479598F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46CD50BE-1138-403F-8296-F1AB479598F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CC5CC7D-F120-4424-9081-D89AEA4EC2F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC5CC7D-F120-4424-9081-D89AEA4EC2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CC5CC7D-F120-4424-9081-D89AEA4EC2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CC5CC7D-F120-4424-9081-D89AEA4EC2F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5F3CA38-6557-4EBB-83C8-7D548B342CC0}
+	EndGlobalSection
+EndGlobal
