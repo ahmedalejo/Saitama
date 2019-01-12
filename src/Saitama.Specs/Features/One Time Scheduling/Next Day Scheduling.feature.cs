@@ -85,14 +85,14 @@ namespace Saitama.Specs.Features.OneTimeScheduling
         public virtual void ScheduleAJobToRunTomorrow()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schedule a job to run tomorrow", null, ((string[])(null)));
-#line 7
+#line 8
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 8
-    testRunner.Given("a job is configured to run tomorrow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
-     testRunner.When("scheduled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.Given("a job is configured to run tomorrow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 10
+     testRunner.When("scheduled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 11
      testRunner.Then("it should run once sometime on the following day", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -108,20 +108,20 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.InlineDataAttribute("Friday    January  04 2019", "Saturday  January 05 2019", new string[0])]
         [Xunit.InlineDataAttribute("Saturday  January  05 2019", "Sunday    January 06 2019", new string[0])]
         [Xunit.InlineDataAttribute("Sunday    January  06 2019", "Monday    January 07 2019", new string[0])]
-        public virtual void ScheduleAJobToRunTomorrowOutline(string currentDateAndTime, string dayOfWeekToRun, string[] exampleTags)
+        public virtual void ScheduleAJobToRunTomorrowOutline(string current_Date, string date_To_Run, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schedule a job to run tomorrow [outline]", null, exampleTags);
-#line 12
+#line 13
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 13
-    testRunner.Given(string.Format("today is {0}", currentDateAndTime), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 14
-      testRunner.And("a job is configured to run tomorrow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.Given(string.Format("today is {0}", current_Date), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 15
-     testRunner.When("scheduled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+      testRunner.And("a job is configured to run tomorrow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 16
-     testRunner.Then(string.Format("it should run once sometime on the following {0}", dayOfWeekToRun), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+     testRunner.When("scheduled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 17
+     testRunner.Then(string.Format("it should run once sometime on {0}", date_To_Run), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -132,14 +132,14 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void ScheduleAJobToRunTomorrowAtACertainTime()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schedule a job to run tomorrow at a certain time", null, ((string[])(null)));
-#line 28
+#line 29
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 29
-    testRunner.Given("a job is configured to run tomorrow at a given time", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 30
-     testRunner.When("scheduled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.Given("a job is configured to run tomorrow at a given time", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 31
+     testRunner.When("scheduled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 32
      testRunner.Then("it should run once at the specified time on the following day", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -149,26 +149,20 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.TraitAttribute("FeatureTitle", "Next Day Scheduling")]
         [Xunit.TraitAttribute("Description", "Schedule a job to run tomorrow at a certain time [outline]")]
         [Xunit.InlineDataAttribute("Monday    December 31 2018 00:00", "Tuesday   January 01 2019 00:00", new string[0])]
-        [Xunit.InlineDataAttribute("Tuesday   January  01 2019 02:15", "Wednesday January 02 2019 02:15", new string[0])]
-        [Xunit.InlineDataAttribute("Wednesday January  02 2019 02:30", "Thursday  January 03 2019 02:30", new string[0])]
-        [Xunit.InlineDataAttribute("Thursday  January  03 2019 04:45", "Friday    January 04 2019 04:45", new string[0])]
-        [Xunit.InlineDataAttribute("Friday    January  04 2019 06:00", "Saturday  January 05 2019 06:00", new string[0])]
-        [Xunit.InlineDataAttribute("Saturday  January  05 2019 10:15", "Sunday    January 06 2019 10:15", new string[0])]
-        [Xunit.InlineDataAttribute("Sunday    January  06 2019 16:30", "Monday    January 07 2019 16:30", new string[0])]
-        public virtual void ScheduleAJobToRunTomorrowAtACertainTimeOutline(string currentDateAndTime, string dateAndTimeToRun, string[] exampleTags)
+        public virtual void ScheduleAJobToRunTomorrowAtACertainTimeOutline(string current_Date_And_Time, string date_And_Time_To_Run, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schedule a job to run tomorrow at a certain time [outline]", null, exampleTags);
-#line 33
+#line 34
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 34
-    testRunner.Given(string.Format("today is {0}", currentDateAndTime), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 35
-      testRunner.And("a job is configured to run tomorrow at time", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.Given(string.Format("today is {0}", current_Date_And_Time), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 36
-     testRunner.When("scheduled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+      testRunner.And("a job is configured to run tomorrow at a given time", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 37
-     testRunner.Then(string.Format("it should run once the on {0}", dateAndTimeToRun), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+     testRunner.When("scheduled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 38
+     testRunner.Then("it should run once on today", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -81,34 +81,6 @@ namespace Saitama.Specs.Features.OneTimeScheduling
             this.ScenarioTearDown();
         }
         
-        [Xunit.TheoryAttribute(DisplayName="Schedule a job to run next week on specific weekday")]
-        [Xunit.TraitAttribute("FeatureTitle", "Next Week Scheduling")]
-        [Xunit.TraitAttribute("Description", "Schedule a job to run next week on specific weekday")]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Monday", "6.00:00:00", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Tuesday", "7.00:00:00", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Wednesday", "8.00:00:00", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Thursday", "9.00:00:00", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Friday", "10.00:00:00", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Saturday", "11.00:00:00", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Sunday", "12.00:00:00", new string[0])]
-        public virtual void ScheduleAJobToRunNextWeekOnSpecificWeekday(string current_Date_And_Time, string day_Of_Week, string time_To_Execution, string[] exampleTags)
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schedule a job to run next week on specific weekday", null, exampleTags);
-#line 8
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 9
-    testRunner.Given(string.Format("the current date and time are \"{0}\"", current_Date_And_Time), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
-      testRunner.And(string.Format("a job is configured to run next week {0}", day_Of_Week), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 11
-     testRunner.When("scheduled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
-     testRunner.Then(string.Format("it should run once after \"{0}\"", time_To_Execution), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
         [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.4.0.0")]
         [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
         public class FixtureData : System.IDisposable

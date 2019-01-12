@@ -4,36 +4,36 @@ using TechTalk.SpecFlow;
 namespace Saitama.Specs.Steps
 {
     [Binding]
-    public class NextDaySchedulingSteps
+    public class ExecutionVerificationSteps
     {
-        [Given]
-        public void a_job_is_configured_to_run_tomorrow()
+        [Then]
+        public void Then_it_should_run_once_on_SCHEDULE(DateTime schedule)
         {
-            ScenarioContext.Current.Pending();
+
         }
 
-        [Given]
-        public void a_job_is_configured_to_run_tomorrow_at_a_given_time()
+        [Then]
+        public void it_should_run_once_sometime_on_SCHEDULE(DateTime schedule)
         {
-            ScenarioContext.Current.Pending();
+
         }
 
         [Then]
         public void it_should_run_once_sometime_on_the_following_day()
         {
-            ScenarioContext.Current.Pending();
+
         }
 
         [Then]
         public void it_should_run_once_sometime_on_the_following_DAY(DayOfWeek day)
         {
-            ScenarioContext.Current.Pending();
+
         }
 
         [Then]
         public void it_should_run_once_at_the_specified_time_on_the_following_day()
         {
-            ScenarioContext.Current.Pending();
+
         }
     }
 }

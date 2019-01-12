@@ -9,7 +9,7 @@ namespace Saitama.Specs.Steps
         [Given]
         public void Given_today_is_DATETIME(DateTime dateTime)
         {
-            ScenarioContext.Current.Pending();
+
         }
     }
 }

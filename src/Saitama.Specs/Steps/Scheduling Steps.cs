@@ -9,7 +9,8 @@ namespace Saitama.Specs.Steps
         [When]
         public void When_scheduled()
         {
-            ScenarioContext.Current.Pending();
+
         }
+
     }
 }

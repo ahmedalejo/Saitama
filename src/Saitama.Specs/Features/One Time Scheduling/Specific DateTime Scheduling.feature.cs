@@ -81,62 +81,6 @@ namespace Saitama.Specs.Features.OneTimeScheduling
             this.ScenarioTearDown();
         }
         
-        [Xunit.TheoryAttribute(DisplayName="Schedule a job to run on a specific date and time")]
-        [Xunit.TraitAttribute("FeatureTitle", "Specific Date Time Scheduling")]
-        [Xunit.TraitAttribute("Description", "Schedule a job to run on a specific date and time")]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "2020-01-01T00:00:00.0+00:00", "365.00:00:00", "a year", new string[0])]
-        [Xunit.InlineDataAttribute("2020-01-01T00:00:00.0+00:00", "2021-01-01T00:00:00.0+00:00", "366.00:00:00", "a leap year", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "2019-01-01T00:00:00.0+00:00", "1.00:00:00", "a day", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "2019-02-01T00:00:00.0+00:00", "31.00:00:00", "a 31 day month", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "2019-02-01T01:00:00.0+00:00", "31.01:00:00", "a 31 day month", new string[0])]
-        [Xunit.InlineDataAttribute("2019-02-01T00:00:00.0+00:00", "2019-02-28T00:00:00.0+00:00", "27.00:00:00", "february", new string[0])]
-        [Xunit.InlineDataAttribute("2020-02-01T00:00:00.0+00:00", "2020-02-29T00:00:00.0+00:00", "28.00:00:00", "leap year february", new string[0])]
-        public virtual void ScheduleAJobToRunOnASpecificDateAndTime(string current_Date_And_Time, string schedule, string time_To_Execution, string info, string[] exampleTags)
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schedule a job to run on a specific date and time", null, exampleTags);
-#line 8
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 9
-    testRunner.Given(string.Format("the current date and time are {0}", current_Date_And_Time), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
-      testRunner.And(string.Format("a job is configured to run on \"{0}\"", schedule), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 11
-     testRunner.When("scheduled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
-     testRunner.Then(string.Format("it should run once after \"{0}\"", time_To_Execution), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [Xunit.TheoryAttribute(DisplayName="Schedule a job to run next week on specific weekday")]
-        [Xunit.TraitAttribute("FeatureTitle", "Specific Date Time Scheduling")]
-        [Xunit.TraitAttribute("Description", "Schedule a job to run next week on specific weekday")]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Monday", "6.00:00:00", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Tuesday", "7.00:00:00", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Wednesday", "8.00:00:00", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Thursday", "9.00:00:00", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Friday", "10.00:00:00", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Saturday", "11.00:00:00", new string[0])]
-        [Xunit.InlineDataAttribute("2019-01-01T00:00:00.0+00:00", "Sunday", "12.00:00:00", new string[0])]
-        public virtual void ScheduleAJobToRunNextWeekOnSpecificWeekday(string current_Date_And_Time, string day_Of_Week, string time_To_Execution, string[] exampleTags)
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Schedule a job to run next week on specific weekday", null, exampleTags);
-#line 25
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 26
-    testRunner.Given(string.Format("the current date and time are \"{0}\"", current_Date_And_Time), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 27
-      testRunner.And(string.Format("a job is configured to run next week {0}", day_Of_Week), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 28
-     testRunner.When("scheduled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 29
-     testRunner.Then(string.Format("it should run once after \"{0}\"", time_To_Execution), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
         [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.4.0.0")]
         [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
         public class FixtureData : System.IDisposable

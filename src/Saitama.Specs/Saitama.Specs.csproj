@@ -66,9 +66,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Next Month Scheduling.feature</DependentUpon>
     </Compile>
-    <Compile Include="Steps\CurrenTimeSteps.cs" />
-    <Compile Include="Steps\SchedulingSteps.cs" />
-    <Compile Include="Steps\NextDaySchedulingSteps.cs" />
+    <Compile Include="Steps\Execution Verification Steps.cs" />
+    <Compile Include="Steps\Current Time Steps.cs" />
+    <Compile Include="Steps\Scheduling Steps.cs" />
+    <Compile Include="Steps\One Time Job Configuration Steps.cs" />
+    <Compile Include="Transforms\DateTimeTransforms.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
